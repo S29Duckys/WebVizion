@@ -7,7 +7,170 @@
     <title>WebVizion vos idées ce transforme en un site</title>
   </head>
   <body>
-    <main id="app"></main>
+    <header>
+      <nav>
+        <span>
+          <img src="./assets/Logo.svg" alt="Logo" />
+          <h2>WebVizion</h2>
+        </span>
+        <ul>
+          <li>À propos</li>
+          <li>Services</li>
+          <li>Notre Équipe</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="app">
+      <section class="HeroSection">
+        <hgroup>
+          <h1>Créons votre <span> vision web</span></h1>
+          <p>
+            WebVizion transforme vos idées en sites web exceptionnels. Nous
+            concevons et développons des solutions digitales sur mesure pour
+            propulser votre entreprise.
+          </p>
+        </hgroup>
+        <div class="BtnHero">
+          <button><a href="#">Découvrir nos services</a></button>
+          <button><a href="">Voir notre travail</a></button>
+        </div>
+      </section>
+      <section class="aboutSection">
+        <h2>Qui sommes-nous ?</h2>
+        <p>
+          Des jeunes passionnées dédiées à créer des expériences web
+          exceptionnelles
+        </p>
+        <div>
+          <div>
+            <p>Notre mission</p>
+            <p>
+              Chez WebVizion, nous croyons que chaque entreprise mérite une
+              présence web qui reflète sa vision unique. Nous combinons
+              créativité, technologie et stratégie pour créer des sites web qui
+              non seulement impressionnent visuellement, mais génèrent également
+              des résultats concrets.
+            </p>
+            <span>
+              <span
+                >50+ <br />
+                Projets réalisés</span
+              >
+              <span
+                >2 <br />
+                Experts passionnés</span
+              >
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="servicesSection">
+        <div>
+          <h2>Nos Services</h2>
+          <p>Des solutions complètes pour tous vos besoins digitaux</p>
+        </div>
+        <div id="ServicesCards"></div>
+      </section>
+      <section class="teamSection">
+        <h2>Notre Équipe</h2>
+        <p>Rencontrez les experts derrière WebVizion</p>
+        <div>
+          <span>
+            <img src="./assets/ppNael.png" alt="Photo de profile Nael" />
+            <h5>Naël</h5>
+            <p>Développeur Full-Stack</p>
+            <p>
+              Passionné par le développement web, je conçois des sites modernes
+              et performants. Curieux et motivé, j’aime apprendre de nouvelles
+              technologies et créer des solutions adaptées aux besoins de chaque
+              client.
+            </p>
+          </span>
+          <span>
+            <img src="./assets/ppEnzo.png" alt="Photo de profile Enzo" />
+            <h5>Enzo</h5>
+            <p>Développeur & commercial</p>
+            <p>
+              Créatif et attentif aux détails, je m’occupe à la fois du
+              développement web et de l’expérience utilisateur. Je gère aussi la
+              relation client afin d’assurer un accompagnement clair et
+              professionnel du début à la fin du projet.
+            </p>
+          </span>
+        </div>
+      </section>
+      <section class="formContactSection">
+        <h2>Démarrons votre projet</h2>
+        <p>
+          Prêt à transformer votre vision en réalité ? Contactez-nous dès
+          aujourd'hui.
+        </p>
+        <div>
+          <h3>Parlons de votre projet</h3>
+          <p>
+            Nous sommes là pour vous accompagner dans la création de votre
+            présence digitale. N'hésitez pas à nous contacter pour discuter de
+            vos besoins.
+          </p>
+          <span>
+            <img src="./assets/email.svg" alt="icone Email" />
+            <span>
+              <p>Email</p>
+              <p>webvizion134@gmail.com</p>
+            </span>
+          </span>
+          <span>
+            <img src="./assets/tel.svg" alt="icone telephone" />
+            <span>
+              <p>Téléphone</p>
+              <p>+33 7 00 00 00 00</p>
+            </span>
+          </span>
+          <span>
+            <img src="./assets/horloge.svg" alt="icone disponibilite" />
+            <span>
+              <p>Disponibilité</p>
+              <p>Lun - Ven, 9h - 18h</p>
+            </span>
+          </span>
+          <span>
+            <img src="./assets/email.svg" alt="icone Email" />
+            <span>
+              <p>Email</p>
+              <p>webvizion134@gmail.com</p>
+            </span>
+          </span>
+        </div>
+        <form action="">
+          <label for="">
+            <p>Nom</p>
+            <input name="name" type="text" placeholder="Charle Dubois" />
+          </label>
+          <label for="">
+            <p>Email</p>
+            <input
+              name="email"
+              type="email"
+              placeholder="exemple@exemple.com"
+            />
+          </label>
+          <label for="">
+            <p>Sujet</p>
+            <input
+              name="sujet"
+              type="text"
+              placeholder="Contact pour la création de mon site"
+            />
+          </label>
+          <label for="">
+            <p>Message</p>
+            <textarea name="textarea" id="textarea"></textarea>
+          </label>
+        </form>
+      </section>
+    </main>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
