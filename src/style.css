@@ -53,25 +53,24 @@ main {
   justify-content: center;
 }
 
-hgroup{
+hgroup {
   text-align: center;
   width: 40%;
 }
 
 .H1Color {
-  color: #0078B8;
+  color: #0078b8;
 }
 
-
-.aboutSection{
+.aboutSection {
   height: 64.6755921730175vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #1E293B;
+  background: #1e293b;
 }
 
-.aboutContent{
+.aboutContent {
   width: 80%;
   display: flex;
   flex-direction: row;
@@ -80,7 +79,7 @@ hgroup{
   margin-top: 40px;
 }
 
-.textAbout{
+.textAbout {
   width: 40%;
   text-align: start;
   gap: 20px;
@@ -88,8 +87,40 @@ hgroup{
   flex-direction: column;
 }
 
+.aboutSection > div:first-child {
+  padding: 5% 0;
+  text-align: center;
+}
 
-.aboutContent>img{
+.aboutContent > img {
   width: 50%;
   border-radius: 10px;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.servicesSection {
+  height: 90.62821833161689vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ServicesCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 25px;
 }
