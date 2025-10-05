@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -16,6 +19,7 @@ nav {
   align-items: center;
   margin: 0 35px;
   height: 100%;
+  color: white;
 }
 
 nav > span {
@@ -31,13 +35,41 @@ ul {
   flex-direction: row;
   gap: 20px;
 }
+li {
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.LiContact {
+  padding: 10px 15px;
+  background: #0078b8;
+}
+
+li>a{
+  color: white;
+  text-decoration: none;
+}
+
+li:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #ffffffa6;
+  color: white;
+  transition: all 0.6s ease-in-out;
+}
+
+b {
+  color: #0078b8;
+  font-size: 30px;
+}
 
 .HeroSection {
-  background: #05689e;
-  background: radial-gradient(
-    circle,
-    rgba(5, 104, 158, 1) 0%,
-    rgba(15, 23, 42, 1) 70%
+  background: #0f7cb8;
+  background: linear-gradient(
+    151deg,
+    rgba(15, 124, 184, 1) 0%,
+    rgba(15, 23, 42, 1) 58%
   );
 }
 
@@ -51,15 +83,45 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 10%;
 }
 
 hgroup {
   text-align: center;
-  width: 40%;
+  color: white;
+  text-align: center;
+  width: 50%;
 }
 
-.H1Color {
+h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+#H1Color {
   color: #0078b8;
+}
+
+.BtnHero button {
+  padding: 15px 30px;
+  margin: 20px;
+  background: #0078b8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#NoBgBtn {
+  background: none;
+  color: #0078b8;
+  border: 2px solid #0078b8;
+}
+
+a {
+  text-decoration: none;
 }
 
 .aboutSection {
@@ -87,9 +149,27 @@ hgroup {
   flex-direction: column;
 }
 
+.textAbout>p:first-child {
+  color: #0078b8;
+  font-weight: 500;
+  font-size: 24px;
+} 
+
+.textAbout>p {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+}
+
 .aboutSection > div:first-child {
-  padding: 5% 0;
+  padding: 2% 0;
   text-align: center;
+  color: #D1D5DB;
+}
+
+.aboutSection > div:first-child > h2 {
+  margin-bottom: 10px;
+  color: white;
 }
 
 .aboutContent > img {
@@ -107,15 +187,22 @@ hgroup {
 
 .number {
   display: flex;
+  color: white;
   flex-direction: column;
   text-align: center;
 }
 
-.servicesSection {
+#servicesSection {
   height: 90.62821833161689vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #05689e;
+  background: radial-gradient(
+    circle,
+    rgba(5, 104, 158, 1) 0%,
+    rgba(15, 23, 42, 1) 70%
+  );
 }
 
 #ServicesCards {
@@ -123,4 +210,37 @@ hgroup {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 25px;
+}
+
+.cardsServicesSolo {
+  width: 50%;
+  height: 16vw;
+  background: #334155;
+  border-radius: 12px;
+  padding: 35px 30px;
+}
+
+.cardsServicesSolo > h3 {
+  color: white;
+  margin: 25px 0 20px 0;
+}
+
+.cardsServicesSolo > p {
+  color: #d1d5db;
+}
+
+.cardsServicesSolo:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.servicesSection > div:first-child {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.teamSection {
+  height: 74.97425334706489vh;
+  background-color: #1e293b;
 }
